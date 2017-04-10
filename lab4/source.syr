@@ -1,0 +1,448 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: source.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "source.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "source"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : source
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/kuba/isp/lab4/source.vhd" in Library work.
+Entity <source> compiled.
+Entity <source> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <source> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <source> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "/home/kuba/isp/lab4/source.vhd" line 117: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "/home/kuba/isp/lab4/source.vhd" line 117: Mux is complete : default of case is discarded
+INFO:Xst:2679 - Register <txd_o> in unit <source> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <ld0> in unit <source> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <digit_i<31>> in unit <source> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <digit_i<30>> in unit <source> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <digit_i<29>> in unit <source> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <digit_i<28>> in unit <source> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <digit_i<27>> in unit <source> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <digit_i<26>> in unit <source> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <digit_i<25>> in unit <source> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <digit_i<23>> in unit <source> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <digit_i<22>> in unit <source> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <digit_i<21>> in unit <source> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <digit_i<20>> in unit <source> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <digit_i<19>> in unit <source> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <digit_i<18>> in unit <source> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <digit_i<17>> in unit <source> has a constant value of 1 during circuit operation. The register is replaced by logic.
+Entity <source> analyzed. Unit <source> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <source>.
+    Related source file is "/home/kuba/isp/lab4/source.vhd".
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 44                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk_i                     (rising_edge)        |
+    | Clock enable       | current_state$or0000      (positive)           |
+    | Reset              | rst_i                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle_state                                     |
+    | Power Up State     | idle_state                                     |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16x7-bit ROM for signal <bit_buffer_7_4$rom0000>.
+    Found 16x7-bit ROM for signal <bit_buffer_3_0$rom0000>.
+    Found 4-bit register for signal <led7_an_o>.
+    Found 8-bit register for signal <led7_seg_o>.
+    Found 8-bit register for signal <bit_buffer>.
+    Found 32-bit up counter for signal <bit_counter>.
+    Found 32-bit up counter for signal <counter>.
+    Found 1-bit register for signal <digit_i<24>>.
+    Found 17-bit register for signal <digit_i<16:0>>.
+    Found 32-bit up counter for signal <segment>.
+    Found 32-bit up counter for signal <tick_counter>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 ROM(s).
+	inferred   4 Counter(s).
+	inferred  38 D-type flip-flop(s).
+Unit <source> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 2
+# Counters                                             : 4
+ 32-bit up counter                                     : 4
+# Registers                                            : 21
+ 1-bit register                                        : 18
+ 4-bit register                                        : 1
+ 8-bit register                                        : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <current_state/FSM> on signal <current_state[1:2]> with gray encoding.
+--------------------------
+ State        | Encoding
+--------------------------
+ idle_state   | 00
+ start_state  | 01
+ listen_state | 11
+ stop_state   | 10
+--------------------------
+
+Synthesizing (advanced) Unit <source>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_bit_buffer_7_4_rom0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_bit_buffer_3_0_rom0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <source> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 2
+# Counters                                             : 4
+ 32-bit up counter                                     : 4
+# Registers                                            : 38
+ Flip-Flops                                            : 38
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <source> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block source, actual ratio is 9.
+FlipFlop segment_0 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 169
+ Flip-Flops                                            : 169
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : source.ngr
+Top Level Output File Name         : source
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 17
+
+Cell Usage :
+# BELS                             : 624
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 124
+#      LUT2                        : 72
+#      LUT2_D                      : 3
+#      LUT3                        : 6
+#      LUT4                        : 124
+#      LUT4_D                      : 1
+#      LUT4_L                      : 5
+#      MUXCY                       : 154
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 128
+# FlipFlops/Latches                : 169
+#      FDC                         : 64
+#      FDCE                        : 67
+#      FDE                         : 20
+#      FDPE                        : 18
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 16
+#      IBUF                        : 2
+#      OBUF                        : 14
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                      183  out of   1920     9%  
+ Number of Slice Flip Flops:            169  out of   3840     4%  
+ Number of 4 input LUTs:                339  out of   3840     8%  
+ Number of IOs:                          17
+ Number of bonded IOBs:                  17  out of    173     9%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_i                              | BUFGP                  | 169   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst_i                              | IBUF                   | 149   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 8.513ns (Maximum Frequency: 117.463MHz)
+   Minimum input arrival time before clock: 5.966ns
+   Maximum output required time after clock: 7.165ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_i'
+  Clock period: 8.513ns (frequency: 117.463MHz)
+  Total number of paths / destination ports: 10986 / 273
+-------------------------------------------------------------------------
+Delay:               8.513ns (Levels of Logic = 8)
+  Source:            tick_counter_21 (FF)
+  Destination:       bit_counter_0 (FF)
+  Source Clock:      clk_i rising
+  Destination Clock: clk_i rising
+
+  Data Path: tick_counter_21 to bit_counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.720   1.216  tick_counter_21 (tick_counter_21)
+     LUT4:I0->O            1   0.551   0.000  current_state_FSM_FFd1-In1_wg_lut<0> (current_state_FSM_FFd1-In1_wg_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  current_state_FSM_FFd1-In1_wg_cy<0> (current_state_FSM_FFd1-In1_wg_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  current_state_FSM_FFd1-In1_wg_cy<1> (current_state_FSM_FFd1-In1_wg_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  current_state_FSM_FFd1-In1_wg_cy<2> (current_state_FSM_FFd1-In1_wg_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  current_state_FSM_FFd1-In1_wg_cy<3> (current_state_FSM_FFd1-In1_wg_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  current_state_FSM_FFd1-In1_wg_cy<4> (current_state_FSM_FFd1-In1_wg_cy<4>)
+     MUXCY:CI->O          39   0.303   1.961  current_state_FSM_FFd1-In1_wg_cy<5> (current_state_FSM_FFd1-In1_wg_cy<5>)
+     LUT4:I2->O           32   0.551   1.853  bit_buffer_and000011 (bit_counter_not0001)
+     FDCE:CE                   0.602          bit_counter_0
+    ----------------------------------------
+    Total                      8.513ns (3.483ns logic, 5.030ns route)
+                                       (40.9% logic, 59.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_i'
+  Total number of paths / destination ports: 24 / 23
+-------------------------------------------------------------------------
+Offset:              5.966ns (Levels of Logic = 2)
+  Source:            rst_i (PAD)
+  Destination:       led7_seg_o_0 (FF)
+  Destination Clock: clk_i rising
+
+  Data Path: rst_i to led7_seg_o_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           151   0.821   2.874  rst_i_IBUF (rst_i_IBUF)
+     LUT2:I0->O           12   0.551   1.118  led7_seg_o_and00001 (led7_seg_o_and0000)
+     FDE:CE                    0.602          led7_seg_o_0
+    ----------------------------------------
+    Total                      5.966ns (1.974ns logic, 3.992ns route)
+                                       (33.1% logic, 66.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_i'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              7.165ns (Levels of Logic = 1)
+  Source:            led7_seg_o_7 (FF)
+  Destination:       led7_seg_o<7> (PAD)
+  Source Clock:      clk_i rising
+
+  Data Path: led7_seg_o_7 to led7_seg_o<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.720   0.801  led7_seg_o_7 (led7_seg_o_7)
+     OBUF:I->O                 5.644          led7_seg_o_7_OBUF (led7_seg_o<7>)
+    ----------------------------------------
+    Total                      7.165ns (6.364ns logic, 0.801ns route)
+                                       (88.8% logic, 11.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.07 secs
+ 
+--> 
+
+
+Total memory usage is 520672 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :   20 (   0 filtered)
+

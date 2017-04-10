@@ -1,0 +1,5 @@
+V3 3
+FL /home/kuba/isp/lab4/source.vhd 2017/04/10.17:44:11 P.20131013
+EN work/source 1491839073 FL /home/kuba/isp/lab4/source.vhd PB ieee/std_logic_1164 1381692176
+AR work/source/Behavioral 1491839074 \
+      FL /home/kuba/isp/lab4/source.vhd EN work/source 1491839073

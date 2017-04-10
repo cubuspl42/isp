@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/kuba/isp/lab4/source.ncd
+OUTFILE=/home/kuba/isp/lab4/source.bit
+FAMILY=Spartan3
+PART=xc3s200-4ft256
+WORKINGDIR=/home/kuba/isp/lab4
+LICENSE=WebPack
+USER_INFO=211338627_0_0_451
