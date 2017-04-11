@@ -3,25 +3,35 @@ ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
+Parsing VHDL file "/home/kuba/code/isp/lab5x/fifo_mem.vhd" into library work
+Parsing VHDL file "/home/kuba/code/isp/lab5x/char_mem.vhd" into library work
 Parsing VHDL file "/home/kuba/code/isp/lab5x/source.vhd" into library work
 Parsing VHDL file "/home/kuba/code/isp/lab5x/test_source.vhd" into library work
 Starting static elaboration
-WARNING:HDLCompiler:89 - "/home/kuba/code/isp/lab5x/source.vhd" Line 155: <char_mem> remains a black-box since it has no binding entity.
-WARNING:HDLCompiler:89 - "/home/kuba/code/isp/lab5x/source.vhd" Line 162: <fifo_mem> remains a black-box since it has no binding entity.
 Completed static elaboration
-Fuse Memory Usage: 96764 KB
-Fuse CPU Usage: 940 ms
-WARNING:Simulator:648 - "/home/kuba/code/isp/lab5x/source.vhd" Line 155. Instance char_mem is unbound
-WARNING:Simulator:648 - "/home/kuba/code/isp/lab5x/source.vhd" Line 162. Instance fifo_mem is unbound
+Fuse Memory Usage: 111112 KB
+Fuse CPU Usage: 1190 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
 Compiling package textio
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package std_logic_textio
+Compiling architecture output_stage_behavioral of entity BLK_MEM_GEN_V7_3_output_stage [\BLK_MEM_GEN_V7_3_output_stage("...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity BLK_MEM_GEN_V7_3_softecc_output_reg_stage [\BLK_MEM_GEN_V7_3_softecc_output...]
+Compiling architecture mem_module_behavioral of entity BLK_MEM_GEN_V7_3_mem_module [\BLK_MEM_GEN_V7_3_mem_module("bl...]
+Compiling architecture behavioral of entity BLK_MEM_GEN_V7_3 [\BLK_MEM_GEN_V7_3("blk_mem_gen_v...]
+Compiling architecture char_mem_a of entity char_mem [char_mem_default]
+Compiling architecture behavioral of entity fifo_generator_v9_3_bhv_ss [\fifo_generator_v9_3_bhv_ss(6,8,...]
+Compiling architecture behavioral of entity fifo_generator_v9_3_conv [\fifo_generator_v9_3_conv(1,0,6,...]
+Compiling architecture behavioral of entity fifo_generator_v9_3 [\fifo_generator_v9_3(1,0,6,"Blan...]
+Compiling architecture fifo_mem_a of entity fifo_mem [fifo_mem_default]
 Compiling architecture behavioral of entity source [source_default]
 Compiling architecture behavior of entity test_source
 Time Resolution for simulation is 1ps.
-Compiled 7 VHDL Units
+Compiled 28 VHDL Units
 Built simulation executable /home/kuba/code/isp/lab5x/test_source_isim_beh.exe
-Fuse Memory Usage: 1195060 KB
-Fuse CPU Usage: 1000 ms
-GCC CPU Usage: 1130 ms
+Fuse Memory Usage: 1215300 KB
+Fuse CPU Usage: 1380 ms
+GCC CPU Usage: 3200 ms

@@ -5,17 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"/home/kuba/code/isp/lab5x/source.vhd" Line 155: &lt;<arg fmt="%s" index="1">char_mem</arg>&gt; remains a black-box since it has no binding entity.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"/home/kuba/code/isp/lab5x/source.vhd" Line 162: &lt;<arg fmt="%s" index="1">fifo_mem</arg>&gt; remains a black-box since it has no binding entity.
-</msg>
-
-<msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">/home/kuba/code/isp/lab5x/source.vhd</arg>&quot; Line <arg fmt="%d" index="2">155</arg>. Instance <arg fmt="%s" index="3">char_mem</arg> is unbound
-</msg>
-
-<msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">/home/kuba/code/isp/lab5x/source.vhd</arg>&quot; Line <arg fmt="%d" index="2">162</arg>. Instance <arg fmt="%s" index="3">fifo_mem</arg> is unbound
-</msg>
-
 </messages>
 
