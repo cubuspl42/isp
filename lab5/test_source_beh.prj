@@ -1,0 +1,4 @@
+vhdl work "fifo_mem.vhd"
+vhdl work "char_mem.vhd"
+vhdl work "source.vhd"
+vhdl work "test_source.vhd"

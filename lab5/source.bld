@@ -1,0 +1,155 @@
+Release 14.7 ngdbuild P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
+ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s200-ft256-4
+source.ngc source.ngd
+
+Reading NGO file "/home/kuba/code/isp/lab5/source.ngc" ...
+Loading design module "ipcore_dir/fifo_mem.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "constraints.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+ERROR:ConstraintSystem:59 - Constraint <NET "led7_an_o<3>" LOC = "E13" ;>
+   [constraints.ucf(9)]: NET "led7_an_o<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "led7_an_o<3>" LOC = "E13" ;> [constraints.ucf(9)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "led7_an_o<2>" LOC = "F14" ;>
+   [constraints.ucf(10)]: NET "led7_an_o<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "led7_an_o<2>" LOC = "F14" ;> [constraints.ucf(10)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "led7_an_o<1>" LOC = "G14" ;>
+   [constraints.ucf(11)]: NET "led7_an_o<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "led7_an_o<1>" LOC = "G14" ;> [constraints.ucf(11)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "led7_an_o<0>" LOC = "D14" ;>
+   [constraints.ucf(12)]: NET "led7_an_o<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "led7_an_o<0>" LOC = "D14" ;> [constraints.ucf(12)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "led7_seg_o<7>" LOC = "E14" ;>
+   [constraints.ucf(13)]: NET "led7_seg_o<7>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "led7_seg_o<7>" LOC = "E14" ;> [constraints.ucf(13)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "led7_seg_o<6>" LOC = "G13" ;>
+   [constraints.ucf(14)]: NET "led7_seg_o<6>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "led7_seg_o<6>" LOC = "G13" ;> [constraints.ucf(14)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "led7_seg_o<5>" LOC = "N15" ;>
+   [constraints.ucf(15)]: NET "led7_seg_o<5>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "led7_seg_o<5>" LOC = "N15" ;> [constraints.ucf(15)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "led7_seg_o<4>" LOC = "P15" ;>
+   [constraints.ucf(16)]: NET "led7_seg_o<4>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "led7_seg_o<4>" LOC = "P15" ;> [constraints.ucf(16)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "led7_seg_o<3>" LOC = "R16" ;>
+   [constraints.ucf(17)]: NET "led7_seg_o<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "led7_seg_o<3>" LOC = "R16" ;> [constraints.ucf(17)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "led7_seg_o<2>" LOC = "F13" ;>
+   [constraints.ucf(18)]: NET "led7_seg_o<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "led7_seg_o<2>" LOC = "F13" ;> [constraints.ucf(18)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "led7_seg_o<1>" LOC = "N16" ;>
+   [constraints.ucf(19)]: NET "led7_seg_o<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "led7_seg_o<1>" LOC = "N16" ;> [constraints.ucf(19)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "led7_seg_o<0>" LOC = "P16" ;>
+   [constraints.ucf(20)]: NET "led7_seg_o<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "led7_seg_o<0>" LOC = "P16" ;> [constraints.ucf(20)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "ld0" LOC = "K12" ;>
+   [constraints.ucf(22)]: NET "ld0" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "ld0" LOC = "K12" ;> [constraints.ucf(22)]' could not be found and so
+   the Locate constraint will be removed.
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:    13
+  Number of warnings:  13
+
+Total memory usage is 394272 kilobytes
+
+Total REAL time to NGDBUILD completion:  1 sec
+Total CPU time to NGDBUILD completion:   1 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "source.bld"...

@@ -1,2 +1,6 @@
-EN source NULL /home/kuba/isp/lab5/source.vhd sub00/vhpl00 1491841688
-AR source behavioral /home/kuba/isp/lab5/source.vhd sub00/vhpl01 1491841689
+AR fifo_mem fifo_mem_a /home/kuba/code/isp/lab5/ipcore_dir/fifo_mem.vhd sub00/vhpl05 1491936459
+EN source NULL /home/kuba/code/isp/lab5/source.vhd sub00/vhpl00 1491936460
+EN fifo_mem NULL /home/kuba/code/isp/lab5/ipcore_dir/fifo_mem.vhd sub00/vhpl04 1491936458
+AR char_mem char_mem_a /home/kuba/code/isp/lab5/char_mem.vhd sub00/vhpl03 1491906133
+AR source behavioral /home/kuba/code/isp/lab5/source.vhd sub00/vhpl01 1491936461
+EN char_mem NULL /home/kuba/code/isp/lab5/char_mem.vhd sub00/vhpl02 1491906132

@@ -16,23 +16,23 @@
 <tr>
 <td>LD_LIBRARY_PATH</td>
 <td>/opt/Xilinx/14.7/ISE_DS/ISE//lib/lin64</td>
-<td><font color=gray>&lt;&nbsp;data not available&nbsp;&gt;</font></td>
-<td><font color=gray>&lt;&nbsp;data not available&nbsp;&gt;</font></td>
-<td><font color=gray>&lt;&nbsp;data not available&nbsp;&gt;</font></td>
+<td>/opt/Xilinx/14.7/ISE_DS/ISE//lib/lin64</td>
+<td><font color=gray>/opt/Xilinx/14.7/ISE_DS/ISE//lib/lin64</font></td>
+<td><font color=gray>/opt/Xilinx/14.7/ISE_DS/ISE//lib/lin64</font></td>
 </tr>
 <tr>
 <td>PATH</td>
 <td>/opt/Xilinx/14.7/ISE_DS/ISE//bin/lin64:<br>/home/kuba/.sdkman/candidates/kotlin/current/bin:<br>/home/kuba/bin:<br>/home/kuba/.local/bin:<br>/usr/local/sbin:<br>/usr/local/bin:<br>/usr/sbin:<br>/usr/bin:<br>/sbin:<br>/bin:<br>/usr/games:<br>/usr/local/games:<br>/snap/bin:<br>/home/kuba/.linuxbrew/bin:<br>/data/bin:<br>/home/kuba/clion-2016.2.3:<br>/home/kuba/.fzf/bin</td>
-<td><font color=gray>&lt;&nbsp;data not available&nbsp;&gt;</font></td>
-<td><font color=gray>&lt;&nbsp;data not available&nbsp;&gt;</font></td>
-<td><font color=gray>&lt;&nbsp;data not available&nbsp;&gt;</font></td>
+<td>/opt/Xilinx/14.7/ISE_DS/ISE//bin/lin64:<br>/home/kuba/.sdkman/candidates/kotlin/current/bin:<br>/home/kuba/bin:<br>/home/kuba/.local/bin:<br>/usr/local/sbin:<br>/usr/local/bin:<br>/usr/sbin:<br>/usr/bin:<br>/sbin:<br>/bin:<br>/usr/games:<br>/usr/local/games:<br>/snap/bin:<br>/home/kuba/.linuxbrew/bin:<br>/data/bin:<br>/home/kuba/clion-2016.2.3:<br>/home/kuba/.fzf/bin</td>
+<td><font color=gray>/opt/Xilinx/14.7/ISE_DS/ISE//bin/lin64:<br>/home/kuba/.sdkman/candidates/kotlin/current/bin:<br>/home/kuba/bin:<br>/home/kuba/.local/bin:<br>/usr/local/sbin:<br>/usr/local/bin:<br>/usr/sbin:<br>/usr/bin:<br>/sbin:<br>/bin:<br>/usr/games:<br>/usr/local/games:<br>/snap/bin:<br>/home/kuba/.linuxbrew/bin:<br>/data/bin:<br>/home/kuba/clion-2016.2.3:<br>/home/kuba/.fzf/bin</font></td>
+<td><font color=gray>/opt/Xilinx/14.7/ISE_DS/ISE//bin/lin64:<br>/home/kuba/.sdkman/candidates/kotlin/current/bin:<br>/home/kuba/bin:<br>/home/kuba/.local/bin:<br>/usr/local/sbin:<br>/usr/local/bin:<br>/usr/sbin:<br>/usr/bin:<br>/sbin:<br>/bin:<br>/usr/games:<br>/usr/local/games:<br>/snap/bin:<br>/home/kuba/.linuxbrew/bin:<br>/data/bin:<br>/home/kuba/clion-2016.2.3:<br>/home/kuba/.fzf/bin</font></td>
 </tr>
 <tr>
 <td>XILINX</td>
 <td>/opt/Xilinx/14.7/ISE_DS/ISE/</td>
-<td><font color=gray>&lt;&nbsp;data not available&nbsp;&gt;</font></td>
-<td><font color=gray>&lt;&nbsp;data not available&nbsp;&gt;</font></td>
-<td><font color=gray>&lt;&nbsp;data not available&nbsp;&gt;</font></td>
+<td>/opt/Xilinx/14.7/ISE_DS/ISE/</td>
+<td><font color=gray>/opt/Xilinx/14.7/ISE_DS/ISE/</font></td>
+<td><font color=gray>/opt/Xilinx/14.7/ISE_DS/ISE/</font></td>
 </tr>
 </TABLE>
 <A NAME="Synthesis Property Settings"></A>
@@ -129,6 +129,12 @@
 <td>Read Cores</td>
 <td>YES</td>
 <td>YES</td>
+</tr>
+<tr>
+<td>-sd</td>
+<td>Cores Search Directories</td>
+<td>{&quot;ipcore_dir&quot;  }</td>
+<td>&nbsp;</td>
 </tr>
 <tr>
 <td>-write_timing_constraints</td>
@@ -253,7 +259,7 @@
 <tr>
 <td>-max_fanout</td>
 <td>&nbsp;</td>
-<td>500</td>
+<td>100000</td>
 <td>500</td>
 </tr>
 <tr>
@@ -317,6 +323,132 @@
 <td>0%</td>
 </tr>
 </TABLE>
+<A NAME="Translation Property Settings"></A>
+&nbsp;<BR><TABLE BORDER CELLSPACING=0 CELLPADDING=3 WIDTH='100%'>
+<TR ALIGN=CENTER BGCOLOR='#99CCFF'>
+<TD ALIGN=CENTER COLSPAN='4'><B>Translation Property Settings </B></TD>
+</tr>
+<tr bgcolor='#ffff99'>
+<td><b>Switch Name</b></td>
+<td><b>Property Name</b></td>
+<td><b>Value</b></td>
+<td><b>Default Value</b></td>
+</tr>
+<tr>
+<td>-intstyle</td>
+<td>&nbsp;</td>
+<td>ise</td>
+<td>None</td>
+</tr>
+<tr>
+<td>-dd</td>
+<td>&nbsp;</td>
+<td>_ngo</td>
+<td>None</td>
+</tr>
+<tr>
+<td>-p</td>
+<td>&nbsp;</td>
+<td>xc3s200-ft256-4</td>
+<td>None</td>
+</tr>
+<tr>
+<td>-sd</td>
+<td>Macro Search Path</td>
+<td>ipcore_dir</td>
+<td>None</td>
+</tr>
+<tr>
+<td>-uc</td>
+<td>&nbsp;</td>
+<td>constraints.ucf</td>
+<td>None</td>
+</tr>
+</TABLE>
+<A NAME="Map Property Settings"></A>
+&nbsp;<BR><TABLE BORDER CELLSPACING=0 CELLPADDING=3 WIDTH='100%'>
+<TR ALIGN=CENTER BGCOLOR='#99CCFF'>
+<TD ALIGN=CENTER COLSPAN='4'><B>Map Property Settings </B></TD>
+</tr>
+<tr bgcolor='#ffff99'>
+<td><b>Switch Name</b></td>
+<td><b>Property Name</b></td>
+<td><b>Value</b></td>
+<td><b>Default Value</b></td>
+</tr>
+<tr>
+<td><font color=gray>-ir</font></td>
+<td><font color=gray>Use RLOC Constraints</font></td>
+<td><font color=gray>OFF</font></td>
+<td><font color=gray>OFF</font></td>
+</tr>
+<tr>
+<td><font color=gray>-cm</font></td>
+<td><font color=gray>Optimization Strategy (Cover Mode)</font></td>
+<td><font color=gray>area</font></td>
+<td><font color=gray>area</font></td>
+</tr>
+<tr>
+<td><font color=gray>-intstyle</font></td>
+<td><font color=gray>&nbsp;</font></td>
+<td><font color=gray>ise</font></td>
+<td><font color=gray>None</font></td>
+</tr>
+<tr>
+<td><font color=gray>-o</font></td>
+<td><font color=gray>&nbsp;</font></td>
+<td><font color=gray>source_map.ncd</font></td>
+<td><font color=gray>None</font></td>
+</tr>
+<tr>
+<td><font color=gray>-pr</font></td>
+<td><font color=gray>Pack I/O Registers/Latches into IOBs</font></td>
+<td><font color=gray>off</font></td>
+<td><font color=gray>off</font></td>
+</tr>
+<tr>
+<td><font color=gray>-p</font></td>
+<td><font color=gray>&nbsp;</font></td>
+<td><font color=gray>xc3s200-ft256-4</font></td>
+<td><font color=gray>None</font></td>
+</tr>
+</TABLE>
+<A NAME="Place and Route Property Settings"></A>
+&nbsp;<BR><TABLE BORDER CELLSPACING=0 CELLPADDING=3 WIDTH='100%'>
+<TR ALIGN=CENTER BGCOLOR='#99CCFF'>
+<TD ALIGN=CENTER COLSPAN='4'><B>Place and Route Property Settings </B></TD>
+</tr>
+<tr bgcolor='#ffff99'>
+<td><b>Switch Name</b></td>
+<td><b>Property Name</b></td>
+<td><b>Value</b></td>
+<td><b>Default Value</b></td>
+</tr>
+<tr>
+<td><font color=gray>-t</font></td>
+<td><font color=gray>&nbsp;</font></td>
+<td><font color=gray>1</font></td>
+<td><font color=gray>1</font></td>
+</tr>
+<tr>
+<td><font color=gray>-intstyle</font></td>
+<td><font color=gray>&nbsp;</font></td>
+<td><font color=gray>ise</font></td>
+<td><font color=gray>&nbsp;</font></td>
+</tr>
+<tr>
+<td><font color=gray>-ol</font></td>
+<td><font color=gray>Place & Route Effort Level (Overall)</font></td>
+<td><font color=gray>high</font></td>
+<td><font color=gray>std</font></td>
+</tr>
+<tr>
+<td><font color=gray>-w</font></td>
+<td><font color=gray>&nbsp;</font></td>
+<td><font color=gray>true</font></td>
+<td><font color=gray>false</font></td>
+</tr>
+</TABLE>
 <A NAME="Operating System Information"></A>
 &nbsp;<BR><TABLE BORDER CELLSPACING=0 CELLPADDING=3 WIDTH='100%'>
 <TR ALIGN=CENTER BGCOLOR='#99CCFF'>
@@ -331,31 +463,31 @@
 </tr>
 <tr>
 <td>CPU Architecture/Speed</td>
-<td>Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz/4149.169 MHz</td>
-<td><font color=gray>&lt;&nbsp; data not available &nbsp;&gt;</font></td>
-<td><font color=gray>&lt;&nbsp; data not available &nbsp;&gt;</font></td>
-<td><font color=gray>&lt;&nbsp; data not available &nbsp;&gt;</font></td>
+<td>Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz/4192.138 MHz</td>
+<td>Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz/4000.000 MHz</td>
+<td><font color=gray>Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz/4171.875 MHz</font></td>
+<td><font color=gray>Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz/4139.892 MHz</font></td>
 </tr>
 <tr>
 <td>Host</td>
 <td>kuba-xubuntu</td>
-<td><font color=gray>&lt;&nbsp; data not available &nbsp;&gt;</font></td>
-<td><font color=gray>&lt;&nbsp; data not available &nbsp;&gt;</font></td>
-<td><font color=gray>&lt;&nbsp; data not available &nbsp;&gt;</font></td>
+<td>kuba-xubuntu</td>
+<td><font color=gray>kuba-xubuntu</font></td>
+<td><font color=gray>kuba-xubuntu</font></td>
 </tr>
 <tr>
 <td>OS Name</td>
 <td>Ubuntu</td>
-<td><font color=gray>&lt;&nbsp; data not available &nbsp;&gt;</font></td>
-<td><font color=gray>&lt;&nbsp; data not available &nbsp;&gt;</font></td>
-<td><font color=gray>&lt;&nbsp; data not available &nbsp;&gt;</font></td>
+<td>Ubuntu</td>
+<td><font color=gray>Ubuntu</font></td>
+<td><font color=gray>Ubuntu</font></td>
 </tr>
 <tr>
 <td>OS Release</td>
 <td>Ubuntu 16.10</td>
-<td><font color=gray>&lt;&nbsp; data not available &nbsp;&gt;</font></td>
-<td><font color=gray>&lt;&nbsp; data not available &nbsp;&gt;</font></td>
-<td><font color=gray>&lt;&nbsp; data not available &nbsp;&gt;</font></td>
+<td>Ubuntu 16.10</td>
+<td><font color=gray>Ubuntu 16.10</font></td>
+<td><font color=gray>Ubuntu 16.10</font></td>
 </tr>
 </TABLE>
 </BODY> </HTML>

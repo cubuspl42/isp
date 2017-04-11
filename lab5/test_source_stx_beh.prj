@@ -1,0 +1,4 @@
+vhdl isim_temp "fifo_mem.vhd"
+vhdl isim_temp "char_mem.vhd"
+vhdl isim_temp "source.vhd"
+vhdl isim_temp "test_source.vhd"

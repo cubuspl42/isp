@@ -1,5 +1,20 @@
-V3 4
+V3 13
+FL /home/kuba/code/isp/lab5/char_mem.vhd 2017/04/11.12:19:09 P.20131013
+EN work/char_mem 1491906132 FL /home/kuba/code/isp/lab5/char_mem.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/char_mem/char_mem_a 1491906133 \
+      FL /home/kuba/code/isp/lab5/char_mem.vhd EN work/char_mem 1491906132
+FL /home/kuba/code/isp/lab5/ipcore_dir/fifo_mem.vhd 2017/04/11.14:53:59 P.20131013
+EN work/fifo_mem 1491936458 FL /home/kuba/code/isp/lab5/ipcore_dir/fifo_mem.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/fifo_mem/fifo_mem_a 1491936459 \
+      FL /home/kuba/code/isp/lab5/ipcore_dir/fifo_mem.vhd EN work/fifo_mem 1491936458
+FL /home/kuba/code/isp/lab5/ipcore_dir/tmp/_cg/char_mem.vhd 2017/04/10.18:20:02 P.20131013
+FL /home/kuba/code/isp/lab5/source.vhd 2017/04/11.20:47:35 P.20131013
+EN work/source 1491936460 FL /home/kuba/code/isp/lab5/source.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB std/TEXTIO 1381692176
+AR work/source/Behavioral 1491936461 \
+      FL /home/kuba/code/isp/lab5/source.vhd EN work/source 1491936460 CP char_mem \
+      CP fifo_mem
 FL /home/kuba/isp/lab5/source.vhd 2017/04/10.18:28:04 P.20131013
-EN work/source 1491841688 FL /home/kuba/isp/lab5/source.vhd PB ieee/std_logic_1164 1381692176
-AR work/source/Behavioral 1491841689 \
-      FL /home/kuba/isp/lab5/source.vhd EN work/source 1491841688 CP char_mem

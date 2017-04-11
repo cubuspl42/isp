@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-04-10T18:10:53</DateModified>
+  <DateModified>2017-04-11T20:39:52</DateModified>
   <ModuleName>source</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/home/kuba/isp/lab5/iseconfig/source.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/kuba/isp/lab5</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2017-04-11T19:59:16</SummaryTimeStamp>
+  <SavedFilePath>/home/kuba/code/isp/lab5/iseconfig/source.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/kuba/code/isp/lab5/</ImplementationReportsDirectory>
   <DateInitialized>2017-04-10T18:10:53</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

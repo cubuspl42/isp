@@ -5,76 +5,179 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/home/kuba/isp/lab5/source.vhd</arg>&quot; line <arg fmt="%d" index="2">133</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">char_mem</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/home/kuba/code/isp/lab5/source.vhd</arg>&quot; line <arg fmt="%d" index="2">160</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fifo_mem</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="1561" delta="new" >&quot;<arg fmt="%s" index="1">/home/kuba/isp/lab5/source.vhd</arg>&quot; line <arg fmt="%d" index="2">127</arg>: Mux is complete : default of case is discarded
+<msg type="info" file="Xst" num="1432" delta="new" >Contents of array &lt;<arg fmt="%s" index="1">wt_row</arg>&gt; may be accessed with a negative index, causing simulation mismatch.
 </msg>
 
-<msg type="info" file="Xst" num="1561" delta="new" >&quot;<arg fmt="%s" index="1">/home/kuba/isp/lab5/source.vhd</arg>&quot; line <arg fmt="%d" index="2">127</arg>: Mux is complete : default of case is discarded
+<msg type="info" file="Xst" num="1433" delta="new" >Contents of array &lt;<arg fmt="%s" index="1">wt_row</arg>&gt; may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">txd_o</arg>&gt; in unit &lt;<arg fmt="%s" index="2">source</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="1432" delta="new" >Contents of array &lt;<arg fmt="%s" index="1">wt_row</arg>&gt; may be accessed with a negative index, causing simulation mismatch.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">ld0</arg>&gt; in unit &lt;<arg fmt="%s" index="2">source</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="1433" delta="new" >Contents of array &lt;<arg fmt="%s" index="1">wt_row</arg>&gt; may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">digit_i&lt;31&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">source</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="1432" delta="new" >Contents of array &lt;<arg fmt="%s" index="1">wt_row</arg>&gt; may be accessed with a negative index, causing simulation mismatch.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">digit_i&lt;30&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">source</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="1433" delta="new" >Contents of array &lt;<arg fmt="%s" index="1">wt_row</arg>&gt; may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">digit_i&lt;29&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">source</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clka</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">digit_i&lt;28&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">source</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">addra</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">digit_i&lt;27&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">source</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+<msg type="warning" file="Xst" num="1305" delta="new" >Output &lt;<arg fmt="%s" index="1">douta</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">00000000</arg>.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">digit_i&lt;26&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">source</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">segment</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">digit_i&lt;25&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">source</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">fifo_rst</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">digit_i&lt;23&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">source</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">fifo_full</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">digit_i&lt;22&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">source</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">fifo_empty</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">digit_i&lt;21&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">source</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">digit_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">digit_i&lt;20&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">source</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">counter</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">digit_i&lt;19&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">source</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="1439" delta="new" >HDL ADVISOR - You may have used signed signal(s) to address this RAM. If that is the case, negative values being out of range, sign bits were ignored. As a result only the first half of the RAM is actually accessed. Please check your source code.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">digit_i&lt;18&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">source</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="1767" delta="new" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">digit_i&lt;17&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">source</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wt_bit_row_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">source</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">douta</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">wt_bit_row_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">source</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">clka</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">wt_bit_row_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">source</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">addra</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">000000000000</arg>.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">wt_bit_row_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">source</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="3034" delta="new" >In order to maximize performance and save block RAM resources, the small ROM &lt;<arg fmt="%s" index="1">Mrom_bit_buffer_7_4_rom0000</arg>&gt; will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">wt_bit_row_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">source</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="3034" delta="new" >In order to maximize performance and save block RAM resources, the small ROM &lt;<arg fmt="%s" index="1">Mrom_bit_buffer_3_0_rom0000</arg>&gt; will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">wt_bit_row_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">source</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">wt_bit_row_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">source</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">wt_bit_row_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">source</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">rom</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">source</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_wt_row</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">wt_bit_row_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">source</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;wt_bit_row_1&gt; &lt;wt_bit_row_2&gt; &lt;wt_bit_row_3&gt; &lt;wt_bit_row_4&gt; &lt;wt_bit_row_5&gt; &lt;wt_bit_row_6&gt; &lt;wt_bit_row_7&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wt_bit_row_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">source</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">rom_addra_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">source</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">rom_addra_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">source</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">rom_addra_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">source</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">rom_addra_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">source</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">rom_addra_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">source</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">rom_addra_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">source</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">rom_addra_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">source</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">rom_addra_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">source</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">rom_addra_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">source</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">rom_addra_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">source</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">rom_addra_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">source</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">rom_addra_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">source</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">tx_input_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">source</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">tx_input_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">source</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">tx_input_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">source</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_wt_row1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">source</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_wt_row4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">source</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_wt_row2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">source</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_wt_row3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">source</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_wt_row7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">source</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_wt_row5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">source</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_wt_row6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">source</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mram_wt_row8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">source</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp36x36.ram</arg> in unit <arg fmt="%s" index="2">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp36x36.ram</arg> of type <arg fmt="%s" index="3">RAMB16_S36_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i&gt; </arg>
 </msg>
 
 </messages>

@@ -1,0 +1,63 @@
+Release 14.7 Drc P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Tue Apr 11 16:52:19 2017
+
+drc -z source.ncd source.pcf
+
+ERROR:PhysDesignRules:368 - The signal <led7_seg_o<0>_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <led7_seg_o<1>_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <led7_seg_o<2>_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <led7_seg_o<3>_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <led7_seg_o<4>_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <led7_seg_o<5>_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <led7_seg_o<6>_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <led7_seg_o<7>_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <ld0_OBUF> is incomplete. The signal is
+   not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <led7_an_o<0>_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <led7_an_o<1>_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <led7_an_o<2>_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <txd_o_OBUF> is incomplete. The signal is
+   not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <led7_an_o<3>_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:10 - The network <led7_seg_o<0>_OBUF> is completely
+   unrouted.
+ERROR:PhysDesignRules:10 - The network <led7_seg_o<1>_OBUF> is completely
+   unrouted.
+ERROR:PhysDesignRules:10 - The network <led7_seg_o<2>_OBUF> is completely
+   unrouted.
+ERROR:PhysDesignRules:10 - The network <led7_seg_o<3>_OBUF> is completely
+   unrouted.
+ERROR:PhysDesignRules:10 - The network <led7_seg_o<4>_OBUF> is completely
+   unrouted.
+ERROR:PhysDesignRules:10 - The network <led7_seg_o<5>_OBUF> is completely
+   unrouted.
+ERROR:PhysDesignRules:10 - The network <led7_seg_o<6>_OBUF> is completely
+   unrouted.
+ERROR:PhysDesignRules:10 - The network <led7_seg_o<7>_OBUF> is completely
+   unrouted.
+ERROR:PhysDesignRules:10 - The network <ld0_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <led7_an_o<0>_OBUF> is completely
+   unrouted.
+ERROR:PhysDesignRules:10 - The network <led7_an_o<1>_OBUF> is completely
+   unrouted.
+ERROR:PhysDesignRules:10 - The network <led7_an_o<2>_OBUF> is completely
+   unrouted.
+ERROR:PhysDesignRules:10 - The network <txd_o_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <led7_an_o<3>_OBUF> is completely
+   unrouted.
+ERROR:Bitgen:25 - DRC detected 28 errors and 0 warnings.  Please see the
+   previously displayed individual error or warning messages for more details.

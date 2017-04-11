@@ -1,1 +1,2 @@
+vhdl work "ipcore_dir/fifo_mem.vhd"
 vhdl work "source.vhd"
