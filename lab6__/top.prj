@@ -1,0 +1,5 @@
+vhdl work "rom.vhd"
+vhdl work "kcpsm3.vhd"
+vhdl work "display.vhd"
+vhdl work "clk_divider.vhd"
+vhdl work "top.vhd"

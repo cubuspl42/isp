@@ -1,0 +1,21 @@
+      NAMEREG s0, mode
+      NAMEREG s1, btn_i
+      NAMEREG s2, btn_i_next
+      NAMEREG s3, btn_i_xor
+      NAMEREG s4, index
+      NAMEREG s5, counter
+      NAMEREG s6, tick
+      NAMEREG s7, digit
+      ENABLE INTERRUPT
+      LOAD digit, 00
+main: 
+      LOAD digit, 0A
+      OUTPUT digit, 00
+      JUMP main
+ isr: 
+      ; add digit, 01
+      ;load digit, 0a
+      ;output digit, 00
+      RETURNI ENABLE
+      ADDRESS 3FF
+      JUMP isr

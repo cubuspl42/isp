@@ -1,0 +1,199 @@
+xst -ise "/media/UUI/_files/lab6e/lab6__/lab6.ise" -intstyle ise -ifn "/media/UUI/_files/lab6e/lab6__/top.xst" -ofn "/media/UUI/_files/lab6e/lab6__/top.syr"
+ngdbuild -ise "/media/UUI/_files/lab6e/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/media/UUI/_files/lab6e/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/media/UUI/_files/lab6e/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/media/UUI/_files/lab6e/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/media/UUI/_files/lab6e/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/media/UUI/_files/lab6e/lab6__/lab6.ise" -intstyle ise -ifn "/media/UUI/_files/lab6e/lab6__/top.xst" -ofn "/media/UUI/_files/lab6e/lab6__/top.syr"
+ngdbuild -ise "/media/UUI/_files/lab6e/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/media/UUI/_files/lab6e/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/media/UUI/_files/lab6e/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/media/UUI/_files/lab6e/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/media/UUI/_files/lab6e/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/lab155/lab6__/lab6.ise" -intstyle ise -ifn "/home/lab155/lab6__/top.xst" -ofn "/home/lab155/lab6__/top.syr"
+ngdbuild -ise "/home/lab155/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/lab155/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/lab155/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/lab155/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/lab155/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/lab155/lab6__/lab6.ise" -intstyle ise -ifn "/home/lab155/lab6__/top.xst" -ofn "/home/lab155/lab6__/top.syr"
+ngdbuild -ise "/home/lab155/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/lab155/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/lab155/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/lab155/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/lab155/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/lab155/lab6__/lab6.ise" -intstyle ise -ifn "/home/lab155/lab6__/top.xst" -ofn "/home/lab155/lab6__/top.syr"
+ngdbuild -ise "/home/lab155/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/lab155/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/lab155/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/lab155/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/lab155/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/lab155/lab6__/lab6.ise" -intstyle ise -ifn "/home/lab155/lab6__/top.xst" -ofn "/home/lab155/lab6__/top.syr"
+ngdbuild -ise "/home/lab155/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+ngdbuild -ise "/home/lab155/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+ngdbuild -ise "/home/lab155/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/lab155/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/lab155/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/lab155/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/lab155/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/lab155/lab6__/lab6.ise" -intstyle ise -ifn "/home/lab155/lab6__/top.xst" -ofn "/home/lab155/lab6__/top.syr"
+xst -ise "/home/lab155/lab6__/lab6.ise" -intstyle ise -ifn "/home/lab155/lab6__/top.xst" -ofn "/home/lab155/lab6__/top.syr"
+ngdbuild -ise "/home/lab155/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/lab155/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/lab155/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/lab155/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/lab155/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+ngdbuild -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/kuba/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+bitgen -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+ngdbuild -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/kuba/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+ngdbuild -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/kuba/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+ngdbuild -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/kuba/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+ngdbuild -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/kuba/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+ngdbuild -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/kuba/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+ngdbuild -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/kuba/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+ngdbuild -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/kuba/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+ngdbuild -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/kuba/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+ngdbuild -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/kuba/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+ngdbuild -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/kuba/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+ngdbuild -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/kuba/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+ngdbuild -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/kuba/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+ngdbuild -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/kuba/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+ngdbuild -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/kuba/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+ngdbuild -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/kuba/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+ngdbuild -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/kuba/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+ngdbuild -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/kuba/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+ngdbuild -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+ngdbuild -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/kuba/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+ngdbuild -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/kuba/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+ngdbuild -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/kuba/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+ngdbuild -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/kuba/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+ngdbuild -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/kuba/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -ifn "/home/kuba/lab6__/top.xst" -ofn "/home/kuba/lab6__/top.syr"
+ngdbuild -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "/home/kuba/lab6__/lab6.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+bitgen -ise "/home/kuba/lab6__/lab6.ise" -intstyle ise -f top.ut top.ncd

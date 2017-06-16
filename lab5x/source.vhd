@@ -77,7 +77,7 @@ architecture Behavioral of source is
 	constant lcd_freq : integer := 50000; -- 50kHz
 	constant rxd_freq : integer := 5208; -- 9600bps
 	constant rxd_freq_2 : integer := 2604; -- 9600bps/2
-	constant row_max : integer := 2; -- 2-15
+	constant row_max : integer := 5; -- 2-15
 
 	type row_t is array (row_max-1 downto 0) of std_logic_vector(7 downto 0);
 
@@ -140,6 +140,8 @@ architecture Behavioral of source is
 	signal wt_sleep : std_logic;
 	signal wt_bit_row : std_logic_vector(7 downto 0);
 
+    signal wt_fifo_reset : std_logic;
+
 	file f : text;
 
 	function vec4(val: integer) return std_logic_vector is
@@ -184,6 +186,10 @@ begin
 			fifo_wr_en <= '0';
 		elsif clk_i'event and clk_i='1' then
 			fifo_wr_en <= '0';
+
+            if wt_fifo_reset = '1' then
+                fifo_size <= fifo_size - row_max;
+            end if;
 
 			if
 				(current_state = idle_state) or
@@ -277,16 +283,19 @@ begin
 	writer: process (clk_i, rst_i)
 	    variable s : line;
 	begin
+
 		if rst_i='1' then
 			wt_i <= 0;
 			wt_j <= 0;
 			wt_k <= 0;
 			wt_state <= idle_state;
 			wt_sleep <= '0';
+            wt_fifo_reset <= '0';
 			fifo_rd_en <= '0';
 		elsif clk_i'event and clk_i='1' then
 			tx_input_valid <= '0';
 			fifo_rd_en <= '0';
+            wt_fifo_reset <= '0';
 
 			if wt_sleep = '1' then
 				wt_sleep <= '0';
@@ -298,6 +307,7 @@ begin
 						wt_k <= 0;
 
 						if fifo_size >= row_max then
+                            wt_fifo_reset <= '1';
 							wt_state <= fetch_char_a;
 
 							--pragma synthesis_off

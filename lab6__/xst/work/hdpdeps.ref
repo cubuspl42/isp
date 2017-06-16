@@ -1,0 +1,42 @@
+V3 50
+FL /home/kuba/lab6__/clk_divider.vhd 2017/06/16.09:44:32 K.39
+EN work/clk_divider 1497606428 FL /home/kuba/lab6__/clk_divider.vhd \
+      PB ieee/std_logic_1164 1217055545 PB ieee/std_logic_arith 1217055546 \
+      PB ieee/STD_LOGIC_UNSIGNED 1217055547
+AR work/clk_divider/Behavioral 1497606429 \
+      FL /home/kuba/lab6__/clk_divider.vhd EN work/clk_divider 1497606428
+FL /home/kuba/lab6__/display.vhd 2017/06/16.09:44:31 K.39
+EN work/display 1497606430 FL /home/kuba/lab6__/display.vhd PB ieee/std_logic_1164 1217055545 \
+      PB ieee/std_logic_arith 1217055546 PB ieee/STD_LOGIC_UNSIGNED 1217055547
+AR work/display/Behavioral 1497606431 \
+      FL /home/kuba/lab6__/display.vhd EN work/display 1497606430
+FL /home/kuba/lab6__/kcpsm3.vhd 2017/06/16.09:44:31 K.39
+EN work/kcpsm3 1497606432 FL /home/kuba/lab6__/kcpsm3.vhd PB ieee/std_logic_1164 1217055545 \
+      PB ieee/std_logic_arith 1217055546 PB ieee/STD_LOGIC_UNSIGNED 1217055547 \
+      LB unisim PH unisim/VCOMPONENTS 1217055545
+AR work/kcpsm3/low_level_definition 1497606433 \
+      FL /home/kuba/lab6__/kcpsm3.vhd EN work/kcpsm3 1497606432 CP LUT1 CP FDR \
+      CP FDS CP LUT4 CP FD CP FDE CP LUT3 CP FDRE CP LUT2 CP MUXCY CP XORCY CP INV \
+      CP string CP label CP FDRSE CP RAM16X1D CP RAM64X1S CP MUXF5 CP RAM32X1S
+FL /home/kuba/lab6__/rom.vhd 2017/06/16.09:44:34 K.39
+EN work/rom 1497606434 FL /home/kuba/lab6__/rom.vhd PB ieee/std_logic_1164 1217055545 \
+      PB ieee/std_logic_arith 1217055546 PB ieee/STD_LOGIC_UNSIGNED 1217055547 \
+      LB unisim PH unisim/VCOMPONENTS 1217055545
+AR work/rom/low_level_definition 1497606435 \
+      FL /home/kuba/lab6__/rom.vhd EN work/rom 1497606434 CP RAMB16_S18
+FL /home/kuba/lab6__/top.vhd 2017/06/16.11:46:59 K.39
+EN work/top 1497606436 FL /home/kuba/lab6__/top.vhd PB ieee/std_logic_1164 1217055545 \
+      PB ieee/STD_LOGIC_UNSIGNED 1217055547 PH ieee/NUMERIC_STD 1217055545
+AR work/top/Behavioral 1497606437 \
+      FL /home/kuba/lab6__/top.vhd EN work/top 1497606436 CP clk_divider CP display \
+      CP kcpsm3 CP rom
+FL /home/lab155/lab6__/clk_divider.vhd 2017/06/16.09:39:56 K.39
+FL /home/lab155/lab6__/display.vhd 2017/06/13.17:16:24 K.39
+FL /home/lab155/lab6__/kcpsm3.vhd 2017/06/13.16:47:12 K.39
+FL /home/lab155/lab6__/rom.vhd 2017/06/16.09:38:17 K.39
+FL /home/lab155/lab6__/top.vhd 2017/06/16.09:38:09 K.39
+FL /media/UUI/_files/lab6e/lab6__/clk_divider.vhd 2017/06/14.03:26:22 K.39
+FL /media/UUI/_files/lab6e/lab6__/display.vhd 2017/06/13.17:16:24 K.39
+FL /media/UUI/_files/lab6e/lab6__/kcpsm3.vhd 2017/06/13.16:47:12 K.39
+FL /media/UUI/_files/lab6e/lab6__/rom.vhd 2017/06/14.16:42:26 K.39
+FL /media/UUI/_files/lab6e/lab6__/top.vhd 2017/06/14.16:47:19 K.39

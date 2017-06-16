@@ -1,0 +1,25 @@
+LOAD s1, 00
+LOAD s2, 00
+LOAD s3, 00
+LOAD s4, 00
+LOAD s5, 04 ;current active
+LOAD sA, 00 ;mode: 0-display, 1-edit
+LOAD sB, 00 ;blink: 00-nothing, 1-digit
+;sC - current active digit, used for blinking
+
+ENABLE INTERRUPT
+loop: JUMP loop
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;interruption handler
+int_handler:
+    input s0, 00
+    or s0, 10
+	OUTPUT s0, 00
+	RETURNI ENABLE ;edit mode disabled
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	ADDRESS 3FF
+JUMP int_handler

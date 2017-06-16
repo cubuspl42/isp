@@ -5,14 +5,14 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="par" timeStamp="Tue Apr 11 21:19:09 2017">
+  <application stringID="par" timeStamp="Fri Apr 21 10:20:51 2017">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="PATH"/>
-          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE//bin/lin64:/home/kuba/.sdkman/candidates/kotlin/current/bin:/home/kuba/bin:/home/kuba/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/kuba/.linuxbrew/bin:/data/bin:/home/kuba/clion-2016.2.3:/home/kuba/.fzf/bin"/>
+          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE//bin/lin64:/home/kuba/.local/share/umake/bin:/home/kuba/.sdkman/candidates/kotlin/current/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/kuba/bin:/home/kuba/.linuxbrew/bin:/data/bin:/home/kuba/clion-2016.2.3:/home/kuba/.fzf/bin:/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="XILINX"/>
@@ -33,7 +33,7 @@
         <column stringID="speed"/>
         <row stringID="row" value="0">
           <item stringID="arch" value="Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz"/>
-          <item stringID="speed" value="4197.753 MHz"/>
+          <item stringID="speed" value="4000.244 MHz"/>
         </row>
       </table>
     </section>
@@ -50,7 +50,7 @@
         <item AVAILABLE="173" dataType="int" label="Number of External IOBs" stringID="PAR_EXTERNAL_IOB" value="6">
           <item AVAILABLE="6" dataType="int" label="Number of LOCed IOBs" stringID="PAR_LOC_IOB" value="6"/>
         </item>
-        <item AVAILABLE="1920" dataType="int" stringID="PAR_SLICES" value="366"></item>
+        <item AVAILABLE="1920" dataType="int" stringID="PAR_SLICES" value="368"></item>
       </section>
     </task>
     <task stringID="PAR_PAR">
@@ -80,8 +80,8 @@
             <item label="Resource" stringID="RESOURCE" value="BUFGMUX0"/>
             <item label="Locked" stringID="LOCKED" value="No"/>
             <item dataType="float" label="Fanout" stringID="FANOUT" value="199.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.003000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.013000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.005000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.015000"/>
           </row>
         </table>
       </section>

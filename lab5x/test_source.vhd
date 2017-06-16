@@ -144,6 +144,7 @@ BEGIN
 		wait for rxd_i_period;
 		
 		rxd_i <= '0'; -- start
+		
 		wait for rxd_i_period;
 		rxd_i <= '1'; -- d0
 		wait for rxd_i_period;

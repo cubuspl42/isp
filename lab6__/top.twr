@@ -1,0 +1,70 @@
+--------------------------------------------------------------------------------
+Release 10.1.03 Trace  (lin)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/10.1/ISE/bin/lin/unwrapped/trce -ise /home/kuba/lab6__/lab6.ise
+-intstyle ise -v 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf constraint.ucf
+
+Design file:              top.ncd
+Physical constraint file: top.pcf
+Device,package,speed:     xc3s200,ft256,-4 (PRODUCTION 1.39 2008-01-09)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock clk_i to Pad
+-------------+------------+------------------+--------+
+             | clk (edge) |                  | Clock  |
+Destination  |   to PAD   |Internal Clock(s) | Phase  |
+-------------+------------+------------------+--------+
+led7_an_o<0> |   10.154(R)|clk_i_BUFGP       |   0.000|
+led7_an_o<1> |   10.044(R)|clk_i_BUFGP       |   0.000|
+led7_an_o<2> |   10.373(R)|clk_i_BUFGP       |   0.000|
+led7_an_o<3> |    9.659(R)|clk_i_BUFGP       |   0.000|
+led7_seg_o<1>|   10.969(R)|clk_i_BUFGP       |   0.000|
+led7_seg_o<2>|   10.007(R)|clk_i_BUFGP       |   0.000|
+led7_seg_o<3>|   11.267(R)|clk_i_BUFGP       |   0.000|
+led7_seg_o<4>|   10.918(R)|clk_i_BUFGP       |   0.000|
+led7_seg_o<5>|   10.640(R)|clk_i_BUFGP       |   0.000|
+led7_seg_o<6>|    9.329(R)|clk_i_BUFGP       |   0.000|
+led7_seg_o<7>|   10.154(R)|clk_i_BUFGP       |   0.000|
+-------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk_i
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_i          |    6.769|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Fri Jun 16 11:47:21 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 79 MB
+
+
+

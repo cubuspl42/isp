@@ -1,0 +1,137 @@
+LOAD s1, 00
+LOAD s2, 00
+LOAD s3, 00
+LOAD s4, 00
+LOAD s5, 03 ;current active
+LOAD sA, 00 ;mode: 0-display, 1-edit
+LOAD sB, 00 ;blink: 00-nothing, 1-digit
+ENABLE INTERRUPT
+loop: JUMP loop
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;disp:  A  B  C  D
+;regs:  1  2  3  4
+;ports: 01 02 03 04
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;digit increase/decrease function
+foo: 
+	;digit in s6
+	COMPARE s0, 01
+	JUMP Z, increase	
+	; s1 == 2
+	SUB s6, 01
+	COMPARE s6, FF
+	JUMP NZ, foo_end
+	LOAD s6, 0F
+	JUMP foo_end
+increase:	
+	ADD s6, 01
+	COMPARE s6, 10
+	JUMP NZ, foo_end
+	LOAD s6, 00
+foo_end:
+	RETURN
+;end foo
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;interruption handler
+int_handler:
+	INPUT s0, 00
+	COMPARE s0, 0A
+	JUMP Z, enable_edit
+	COMPARE sA, 01
+	JUMP Z, edit_mode
+	RETURNI ENABLE ;edit mode disabled
+
+edit_mode:
+	COMPARE s0, 0B
+	JUMP Z, blink
+
+	COMPARE s0, 01
+	JUMP Z, change_digit
+	COMPARE s0, 02
+	JUMP NZ, shift	
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;	
+change_digit:
+	COMPARE s5, 00
+	JUMP Z, digit_a	
+	COMPARE s5, 01
+	JUMP Z, digit_b
+	COMPARE s5, 02
+	JUMP Z, digit_c
+digit_d:
+	LOAD s6, s4
+	CALL foo
+	LOAD s4, s6
+	OUTPUT s4, 04
+	RETURNI ENABLE
+digit_c:
+	LOAD s6, s3
+	CALL foo
+	LOAD s3, s6
+	OUTPUT s3, 03
+	RETURNI ENABLE		
+
+digit_b:
+	LOAD s6, s2
+	CALL foo
+	LOAD s2, s6
+	OUTPUT s2, 02
+	RETURNI ENABLE	
+	
+digit_a:
+	LOAD s6, s1
+	CALL foo
+	LOAD s1, s6
+	OUTPUT s1, 01
+	RETURNI ENABLE	
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+shift:
+	COMPARE s0, 10
+	JUMP Z, right
+		
+	SUB s5, 01
+	COMPARE s5, FF
+	JUMP NZ, int_end2
+	LOAD s5, 03
+	JUMP int_end2
+right:
+	ADD s5, 01
+	COMPARE s5, 04
+	JUMP NZ, int_end2
+	LOAD s5, 00
+int_end2:
+	RETURNI ENABLE
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+enable_edit:
+	COMPARE sA, 00
+	JUMP Z, enable_edit_enable 	
+	LOAD sA, 00
+	RETURNI ENABLE
+enable_edit_enable:
+	LOAD sA, 01
+	RETURNI ENABLE
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+blink:
+	COMPARE sB, 00
+	JUMP Z, blink_nothing
+;blink digit:
+	LOAD s0, FF
+	OUTPUT s0, 01
+	LOAD sB, 00
+	RETURNI ENABLE
+blink_nothing:
+	OUTPUT s1, 01
+	LOAD sB, 01
+	RETURNI ENABLE
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	ADDRESS 3FF
+JUMP int_handler

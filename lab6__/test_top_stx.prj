@@ -1,0 +1,6 @@
+vhdl isim_temp "rom.vhd"
+vhdl isim_temp "kcpsm3.vhd"
+vhdl isim_temp "display.vhd"
+vhdl isim_temp "clk_divider.vhd"
+vhdl isim_temp "top.vhd"
+vhdl isim_temp "test_top.vhd"

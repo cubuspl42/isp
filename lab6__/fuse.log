@@ -1,0 +1,79 @@
+Running : /opt_local/Xilinx/10.1/ISE/bin/lin/unwrapped/fuse -ise
+/media/UUI/_files/lab6e/lab6__/lab6.ise -intstyle ise -incremental -o
+test_top_isim_beh.exe -prj test_top_beh.prj -top test_top
+Determining compilation order of HDL files
+Analyzing VHDL file rom.vhd
+Restoring VHDL parse-tree ieee.std_logic_1164 from
+/opt_local/Xilinx/10.1/ISE/vhdl/hdp/lin/ieee/std_logic_1164.vdb
+Restoring VHDL parse-tree std.standard from
+/opt_local/Xilinx/10.1/ISE/vhdl/hdp/lin/std/standard.vdb
+Restoring VHDL parse-tree ieee.std_logic_arith from
+/opt_local/Xilinx/10.1/ISE/vhdl/hdp/lin/ieee/std_logic_arith.vdb
+Restoring VHDL parse-tree ieee.std_logic_unsigned from
+/opt_local/Xilinx/10.1/ISE/vhdl/hdp/lin/ieee/std_logic_unsigned.vdb
+Restoring VHDL parse-tree unisim.vcomponents from
+/opt_local/Xilinx/10.1/ISE/vhdl/hdp/lin/unisim/unisim.vdbl
+Analyzing VHDL file kcpsm3.vhd
+Analyzing VHDL file display.vhd
+Analyzing VHDL file clk_divider.vhd
+Analyzing VHDL file top.vhd
+Restoring VHDL parse-tree ieee.numeric_std from
+/opt_local/Xilinx/10.1/ISE/vhdl/hdp/lin/ieee/numeric_std.vdb
+Analyzing VHDL file test_top.vhd
+Saving VHDL parse-tree work.rom into
+/media/UUI/_files/lab6e/lab6__/isim/work/rom.vdb
+Saving VHDL parse-tree work.kcpsm3 into
+/media/UUI/_files/lab6e/lab6__/isim/work/kcpsm3.vdb
+Saving VHDL parse-tree work.display into
+/media/UUI/_files/lab6e/lab6__/isim/work/display.vdb
+Saving VHDL parse-tree work.clk_divider into
+/media/UUI/_files/lab6e/lab6__/isim/work/clk_divider.vdb
+Saving VHDL parse-tree work.top into
+/media/UUI/_files/lab6e/lab6__/isim/work/top.vdb
+Saving VHDL parse-tree work.test_top into
+/media/UUI/_files/lab6e/lab6__/isim/work/test_top.vdb
+Starting static elaboration
+Restoring VHDL parse-tree unisim.lut1 from
+/opt_local/Xilinx/10.1/ISE/vhdl/hdp/lin/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.fdr from
+/opt_local/Xilinx/10.1/ISE/vhdl/hdp/lin/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.fds from
+/opt_local/Xilinx/10.1/ISE/vhdl/hdp/lin/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.lut4 from
+/opt_local/Xilinx/10.1/ISE/vhdl/hdp/lin/unisim/unisim.vdbl
+Restoring VHDL parse-tree std.textio from
+/opt_local/Xilinx/10.1/ISE/vhdl/hdp/lin/std/textio.vdb
+Restoring VHDL parse-tree ieee.vital_timing from
+/opt_local/Xilinx/10.1/ISE/vhdl/hdp/lin/ieee/vital_timing.vdb
+Restoring VHDL parse-tree ieee.vital_primitives from
+/opt_local/Xilinx/10.1/ISE/vhdl/hdp/lin/ieee/vital_primitives.vdb
+Restoring VHDL parse-tree unisim.vpkg from
+/opt_local/Xilinx/10.1/ISE/vhdl/hdp/lin/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.fd from
+/opt_local/Xilinx/10.1/ISE/vhdl/hdp/lin/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.fde from
+/opt_local/Xilinx/10.1/ISE/vhdl/hdp/lin/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.lut3 from
+/opt_local/Xilinx/10.1/ISE/vhdl/hdp/lin/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.fdre from
+/opt_local/Xilinx/10.1/ISE/vhdl/hdp/lin/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.lut2 from
+/opt_local/Xilinx/10.1/ISE/vhdl/hdp/lin/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.muxcy from
+/opt_local/Xilinx/10.1/ISE/vhdl/hdp/lin/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.xorcy from
+/opt_local/Xilinx/10.1/ISE/vhdl/hdp/lin/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.inv from
+/opt_local/Xilinx/10.1/ISE/vhdl/hdp/lin/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.fdrse from
+/opt_local/Xilinx/10.1/ISE/vhdl/hdp/lin/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.ram16x1d from
+/opt_local/Xilinx/10.1/ISE/vhdl/hdp/lin/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.ram64x1s from
+/opt_local/Xilinx/10.1/ISE/vhdl/hdp/lin/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.muxf5 from
+/opt_local/Xilinx/10.1/ISE/vhdl/hdp/lin/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.ram32x1s from
+/opt_local/Xilinx/10.1/ISE/vhdl/hdp/lin/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.ramb16_s18 from
+/opt_local/Xilinx/10.1/ISE/vhdl/hdp/lin/unisim/unisim.vdbl

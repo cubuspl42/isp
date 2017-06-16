@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Reading design: source.prj
@@ -71,7 +71,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 8
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -139,13 +139,13 @@ Performing bidirectional port resolution...
 Synthesizing Unit <source>.
     Related source file is "/home/kuba/code/isp/lab5x/source.vhd".
 INFO:Xst:1439 - HDL ADVISOR - You may have used signed signal(s) to address this RAM. If that is the case, negative values being out of range, sign bits were ignored. As a result only the first half of the RAM is actually accessed. Please check your source code.
-    Found 2x8-bit dual-port RAM <Mram_wt_row> for signal <wt_row>.
+    Found 5x8-bit dual-port RAM <Mram_wt_row> for signal <wt_row>.
     Found finite state machine <FSM_0> for signal <current_state>.
     -----------------------------------------------------------------------
     | States             | 4                                              |
     | Transitions        | 44                                             |
     | Inputs             | 4                                              |
-    | Outputs            | 6                                              |
+    | Outputs            | 8                                              |
     | Clock              | clk_i                     (rising_edge)        |
     | Clock enable       | current_state$or0000      (positive)           |
     | Reset              | rst_i                     (positive)           |
@@ -190,32 +190,34 @@ INFO:Xst:1439 - HDL ADVISOR - You may have used signed signal(s) to address this
     Found 32-bit up counter for signal <bit_counter>.
     Found 8-bit register for signal <fifo_din>.
     Found 1-bit register for signal <fifo_rd_en>.
-    Found 32-bit up counter for signal <fifo_size>.
+    Found 32-bit register for signal <fifo_size>.
+    Found 32-bit addsub for signal <fifo_size$mux0000>.
     Found 1-bit register for signal <fifo_wr_en>.
     Found 12-bit register for signal <rom_addra>.
     Found 32-bit up counter for signal <tick_counter>.
     Found 32-bit register for signal <tx_bit_counter>.
-    Found 32-bit adder for signal <tx_bit_counter$addsub0000> created at line 263.
+    Found 32-bit adder for signal <tx_bit_counter$addsub0000> created at line 269.
     Found 1-bit register for signal <tx_busy>.
     Found 8-bit register for signal <tx_input>.
     Found 1-bit register for signal <tx_input_valid>.
     Found 32-bit down counter for signal <tx_tick_counter>.
     Found 8-bit register for signal <wt_bit_row>.
-    Found 1-bit 8-to-1 multiplexer for signal <wt_bit_row$mux0000> created at line 329.
+    Found 1-bit 8-to-1 multiplexer for signal <wt_bit_row$mux0000> created at line 339.
+    Found 1-bit register for signal <wt_fifo_reset>.
     Found 32-bit register for signal <wt_i>.
-    Found 32-bit adder for signal <wt_i$addsub0000> created at line 380.
+    Found 32-bit adder for signal <wt_i$addsub0000> created at line 390.
     Found 32-bit register for signal <wt_j>.
-    Found 32-bit adder for signal <wt_j$addsub0000> created at line 345.
+    Found 32-bit adder for signal <wt_j$addsub0000> created at line 355.
     Found 32-bit register for signal <wt_k>.
-    Found 32-bit adder for signal <wt_k$share0000> created at line 294.
+    Found 32-bit adder for signal <wt_k$share0000> created at line 303.
     Found 1-bit register for signal <wt_sleep>.
-    Found 32-bit comparator greatequal for signal <wt_state$cmp_ge0000> created at line 300.
+    Found 32-bit comparator greatequal for signal <wt_state$cmp_ge0000> created at line 309.
     Summary:
 	inferred   3 Finite State Machine(s).
 	inferred   1 RAM(s).
-	inferred   4 Counter(s).
-	inferred 178 D-type flip-flop(s).
-	inferred   4 Adder/Subtractor(s).
+	inferred   3 Counter(s).
+	inferred 211 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
 	inferred   1 Comparator(s).
 	inferred   1 Multiplexer(s).
 Unit <source> synthesized.
@@ -227,16 +229,17 @@ HDL Synthesis Report
 
 Macro Statistics
 # RAMs                                                 : 1
- 2x8-bit dual-port RAM                                 : 1
-# Adders/Subtractors                                   : 4
+ 5x8-bit dual-port RAM                                 : 1
+# Adders/Subtractors                                   : 5
  32-bit adder                                          : 4
-# Counters                                             : 4
+ 32-bit addsub                                         : 1
+# Counters                                             : 3
  32-bit down counter                                   : 1
- 32-bit up counter                                     : 3
-# Registers                                            : 15
- 1-bit register                                        : 6
+ 32-bit up counter                                     : 2
+# Registers                                            : 17
+ 1-bit register                                        : 7
  12-bit register                                       : 1
- 32-bit register                                       : 4
+ 32-bit register                                       : 5
  8-bit register                                        : 4
 # Comparators                                          : 1
  32-bit comparator greatequal                          : 1
@@ -289,12 +292,13 @@ Loading core <char_mem> for timing and area information for instance <rom>.
 Loading core <fifo_mem> for timing and area information for instance <fifo>.
 
 Synthesizing (advanced) Unit <source>.
+The following registers are absorbed into accumulator <fifo_size>: 1 register on signal <fifo_size>.
 INFO:Xst:3231 - The small RAM <Mram_wt_row> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 2-word x 8-bit                      |          |
+    |     aspect ratio   | 5-word x 8-bit                      |          |
     |     clkA           | connected to signal <clk_i>         | rise     |
     |     weA            | connected to signal <_cmp_eq0000_0> | high     |
     |     addrA          | connected to signal <wt_k>          |          |
@@ -302,7 +306,7 @@ INFO:Xst:3231 - The small RAM <Mram_wt_row> will be implemented on LUTs in order
     |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
     | Port B                                                              |
-    |     aspect ratio   | 2-word x 8-bit                      |          |
+    |     aspect ratio   | 5-word x 8-bit                      |          |
     |     addrB          | connected to signal <wt_k>          |          |
     |     doB            | connected to internal node          |          |
     -----------------------------------------------------------------------
@@ -314,14 +318,16 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # FSMs                                                 : 3
 # RAMs                                                 : 1
- 2x8-bit dual-port distributed RAM                     : 1
+ 5x8-bit dual-port distributed RAM                     : 1
 # Adders/Subtractors                                   : 4
  32-bit adder                                          : 4
-# Counters                                             : 4
+# Counters                                             : 3
  32-bit down counter                                   : 1
- 32-bit up counter                                     : 3
-# Registers                                            : 178
- Flip-Flops                                            : 178
+ 32-bit up counter                                     : 2
+# Accumulators                                         : 1
+ 32-bit updown accumulator                             : 1
+# Registers                                            : 179
+ Flip-Flops                                            : 179
 # Comparators                                          : 1
  32-bit comparator greatequal                          : 1
 # Multiplexers                                         : 1
@@ -345,7 +351,6 @@ INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
-FlipFlop wt_k_0 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -383,28 +388,27 @@ Design Statistics
 # IOs                              : 6
 
 Cell Usage :
-# BELS                             : 1246
+# BELS                             : 1251
 #      GND                         : 6
-#      INV                         : 44
-#      LUT1                        : 219
-#      LUT2                        : 103
+#      INV                         : 43
+#      LUT1                        : 190
+#      LUT2                        : 127
 #      LUT2_D                      : 1
-#      LUT2_L                      : 1
-#      LUT3                        : 31
-#      LUT3_D                      : 3
+#      LUT3                        : 28
+#      LUT3_D                      : 5
 #      LUT3_L                      : 1
-#      LUT4                        : 239
+#      LUT4                        : 248
 #      LUT4_D                      : 14
-#      LUT4_L                      : 7
-#      MUXCY                       : 312
-#      MUXF5                       : 6
+#      LUT4_L                      : 11
+#      MUXCY                       : 313
+#      MUXF5                       : 5
 #      MUXF6                       : 1
 #      VCC                         : 2
 #      XORCY                       : 256
 # FlipFlops/Latches                : 347
 #      FD                          : 4
-#      FDC                         : 67
-#      FDCE                        : 205
+#      FDC                         : 68
+#      FDCE                        : 204
 #      FDE                         : 69
 #      FDPE                        : 2
 # RAMS                             : 11
@@ -422,10 +426,10 @@ Device utilization summary:
 
 Selected Device : 3s200ft256-4 
 
- Number of Slices:                      372  out of   1920    19%  
+ Number of Slices:                      375  out of   1920    19%  
  Number of Slice Flip Flops:            347  out of   3840     9%  
- Number of 4 input LUTs:                679  out of   3840    17%  
-    Number used as logic:               663
+ Number of 4 input LUTs:                684  out of   3840    17%  
+    Number used as logic:               668
     Number used as RAMs:                 16
  Number of IOs:                           6
  Number of bonded IOBs:                   6  out of    173     3%  
@@ -470,8 +474,8 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 9.041ns (Maximum Frequency: 110.609MHz)
-   Minimum input arrival time before clock: 8.222ns
+   Minimum period: 10.473ns (Maximum Frequency: 95.484MHz)
+   Minimum input arrival time before clock: 9.597ns
    Maximum output required time after clock: 7.165ns
    Maximum combinational path delay: No path found
 
@@ -481,16 +485,16 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_i'
-  Clock period: 9.041ns (frequency: 110.609MHz)
-  Total number of paths / destination ports: 25662 / 683
+  Clock period: 10.473ns (frequency: 95.484MHz)
+  Total number of paths / destination ports: 44096 / 714
 -------------------------------------------------------------------------
-Delay:               9.041ns (Levels of Logic = 9)
+Delay:               10.473ns (Levels of Logic = 41)
   Source:            tick_counter_22 (FF)
-  Destination:       fifo_size_0 (FF)
+  Destination:       fifo_size_31 (FF)
   Source Clock:      clk_i rising
   Destination Clock: clk_i rising
 
-  Data Path: tick_counter_22 to fifo_size_0
+  Data Path: tick_counter_22 to fifo_size_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -501,34 +505,99 @@ Delay:               9.041ns (Levels of Logic = 9)
      MUXCY:CI->O           1   0.064   0.000  current_state_cmp_eq00001_wg_cy<2> (current_state_cmp_eq00001_wg_cy<2>)
      MUXCY:CI->O           1   0.064   0.000  current_state_cmp_eq00001_wg_cy<3> (current_state_cmp_eq00001_wg_cy<3>)
      MUXCY:CI->O           1   0.064   0.000  current_state_cmp_eq00001_wg_cy<4> (current_state_cmp_eq00001_wg_cy<4>)
-     MUXCY:CI->O           5   0.303   0.989  current_state_cmp_eq00001_wg_cy<5> (current_state_cmp_eq00001_wg_cy<5>)
-     LUT3_D:I2->O          4   0.551   0.943  current_state_cmp_eq000134 (current_state_cmp_eq0001)
-     LUT4:I3->O           33   0.551   1.859  fifo_size_not00011 (fifo_size_not0001)
-     FDCE:CE                   0.602          fifo_size_0
+     MUXCY:CI->O          13   0.303   1.196  current_state_cmp_eq00001_wg_cy<5> (current_state_cmp_eq00001_wg_cy<5>)
+     LUT4:I3->O            3   0.551   1.102  fifo_size_mux0001<29>1_1 (fifo_size_mux0001<29>1)
+     LUT2:I1->O            1   0.551   0.000  Maccum_fifo_size_lut<0> (Maccum_fifo_size_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  Maccum_fifo_size_cy<0> (Maccum_fifo_size_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<1> (Maccum_fifo_size_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<2> (Maccum_fifo_size_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<3> (Maccum_fifo_size_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<4> (Maccum_fifo_size_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<5> (Maccum_fifo_size_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<6> (Maccum_fifo_size_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<7> (Maccum_fifo_size_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<8> (Maccum_fifo_size_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<9> (Maccum_fifo_size_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<10> (Maccum_fifo_size_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<11> (Maccum_fifo_size_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<12> (Maccum_fifo_size_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<13> (Maccum_fifo_size_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<14> (Maccum_fifo_size_cy<14>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<15> (Maccum_fifo_size_cy<15>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<16> (Maccum_fifo_size_cy<16>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<17> (Maccum_fifo_size_cy<17>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<18> (Maccum_fifo_size_cy<18>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<19> (Maccum_fifo_size_cy<19>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<20> (Maccum_fifo_size_cy<20>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<21> (Maccum_fifo_size_cy<21>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<22> (Maccum_fifo_size_cy<22>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<23> (Maccum_fifo_size_cy<23>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<24> (Maccum_fifo_size_cy<24>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<25> (Maccum_fifo_size_cy<25>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<26> (Maccum_fifo_size_cy<26>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<27> (Maccum_fifo_size_cy<27>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<28> (Maccum_fifo_size_cy<28>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<29> (Maccum_fifo_size_cy<29>)
+     MUXCY:CI->O           0   0.064   0.000  Maccum_fifo_size_cy<30> (Maccum_fifo_size_cy<30>)
+     XORCY:CI->O           1   0.904   0.000  Maccum_fifo_size_xor<31> (Result<31>2)
+     FDCE:D                    0.203          fifo_size_31
     ----------------------------------------
-    Total                      9.041ns (4.034ns logic, 5.007ns route)
-                                       (44.6% logic, 55.4% route)
+    Total                     10.473ns (6.959ns logic, 3.514ns route)
+                                       (66.4% logic, 33.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_i'
-  Total number of paths / destination ports: 98 / 89
+  Total number of paths / destination ports: 627 / 121
 -------------------------------------------------------------------------
-Offset:              8.222ns (Levels of Logic = 3)
-  Source:            rst_i (PAD)
-  Destination:       fifo_din_0 (FF)
+Offset:              9.597ns (Levels of Logic = 36)
+  Source:            rxd_i (PAD)
+  Destination:       fifo_size_31 (FF)
   Destination Clock: clk_i rising
 
-  Data Path: rst_i to fifo_din_0
+  Data Path: rxd_i to fifo_size_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           281   0.821   3.474  rst_i_IBUF (rst_i_IBUF)
-     LUT2:I1->O            1   0.551   1.140  fifo_din_and0000_SW0 (N112)
-     LUT4:I0->O            8   0.551   1.083  fifo_din_and0000 (fifo_din_and0000)
-     FDE:CE                    0.602          fifo_din_0
+     IBUF:I->O             8   0.821   1.422  rxd_i_IBUF (rxd_i_IBUF)
+     LUT3_D:I0->O          2   0.551   1.072  current_state_cmp_eq000134_SW0 (N42)
+     LUT4:I1->O            3   0.551   1.102  fifo_size_mux0001<29>1_1 (fifo_size_mux0001<29>1)
+     LUT2:I1->O            1   0.551   0.000  Maccum_fifo_size_lut<0> (Maccum_fifo_size_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  Maccum_fifo_size_cy<0> (Maccum_fifo_size_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<1> (Maccum_fifo_size_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<2> (Maccum_fifo_size_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<3> (Maccum_fifo_size_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<4> (Maccum_fifo_size_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<5> (Maccum_fifo_size_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<6> (Maccum_fifo_size_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<7> (Maccum_fifo_size_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<8> (Maccum_fifo_size_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<9> (Maccum_fifo_size_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<10> (Maccum_fifo_size_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<11> (Maccum_fifo_size_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<12> (Maccum_fifo_size_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<13> (Maccum_fifo_size_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<14> (Maccum_fifo_size_cy<14>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<15> (Maccum_fifo_size_cy<15>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<16> (Maccum_fifo_size_cy<16>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<17> (Maccum_fifo_size_cy<17>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<18> (Maccum_fifo_size_cy<18>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<19> (Maccum_fifo_size_cy<19>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<20> (Maccum_fifo_size_cy<20>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<21> (Maccum_fifo_size_cy<21>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<22> (Maccum_fifo_size_cy<22>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<23> (Maccum_fifo_size_cy<23>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<24> (Maccum_fifo_size_cy<24>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<25> (Maccum_fifo_size_cy<25>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<26> (Maccum_fifo_size_cy<26>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<27> (Maccum_fifo_size_cy<27>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<28> (Maccum_fifo_size_cy<28>)
+     MUXCY:CI->O           1   0.064   0.000  Maccum_fifo_size_cy<29> (Maccum_fifo_size_cy<29>)
+     MUXCY:CI->O           0   0.064   0.000  Maccum_fifo_size_cy<30> (Maccum_fifo_size_cy<30>)
+     XORCY:CI->O           1   0.904   0.000  Maccum_fifo_size_xor<31> (Result<31>2)
+     FDCE:D                    0.203          fifo_size_31
     ----------------------------------------
-    Total                      8.222ns (2.525ns logic, 5.697ns route)
-                                       (30.7% logic, 69.3% route)
+    Total                      9.597ns (6.001ns logic, 3.596ns route)
+                                       (62.5% logic, 37.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_i'
@@ -553,12 +622,12 @@ Offset:              7.165ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.87 secs
+Total CPU time to Xst completion: 4.94 secs
  
 --> 
 
 
-Total memory usage is 534188 kilobytes
+Total memory usage is 535020 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

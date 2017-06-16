@@ -1,0 +1,101 @@
+namereg s0, mode
+namereg s1, btn_i
+namereg s2, btn_i_next
+namereg s3, btn_i_xor
+namereg s4, index
+namereg s5, counter
+namereg s6, tick
+namereg s7, digit
+
+enable interrupt
+
+load mode, 01
+load btn_i, 00
+load btn_i_next, 00
+load btn_i_xor, 00
+load index, 00
+load counter, 00
+load tick, 00
+load digit, 00
+
+store digit, 00
+store digit, 01
+store digit, 02
+store digit, 03
+
+main:
+	jump main
+
+isr:
+
+	input btn_i_next, 00
+	load btn_i_xor, btn_i
+	xor btn_i_xor, btn_i_next
+
+test_btn_0:
+
+	test btn_i_xor, 01
+	jump z, test_btn_1
+	test btn_i_next, 01
+	jump z, test_btn_1
+
+; if btn_i(0) pressed
+
+	fetch digit, (index)
+	add digit, 01
+	and digit, 0f
+	store digit, (index)
+	output digit, (index)
+	jump exit
+
+test_btn_1:
+
+	test btn_i_xor, 02
+	jump z, test_btn_2
+	test btn_i_next, 02
+	jump z, test_btn_2
+
+; if btn_i(1) pressed
+
+	fetch digit, (index)
+	sub digit, 01
+	and digit, 0f
+	store digit, (index)
+	output digit, (index)
+	jump exit
+
+test_btn_2:
+
+	test btn_i_xor, 04
+	jump z, test_btn_3
+	test btn_i_next, 04
+	jump z, test_btn_3
+
+; if btn_i(2) pressed
+
+	sub index, 01
+	and index, 03
+	output index, 04
+	jump exit
+
+test_btn_3:
+
+	test btn_i_xor, 08
+	jump z, exit
+	test btn_i_next, 08
+	jump z, exit
+
+; if btn_i(3) pressed
+
+	add index, 01
+	and index, 03
+	output index, 04
+	jump exit
+
+exit:
+
+	load btn_i, btn_i_next
+	returni enable
+
+address 3ff
+jump isr

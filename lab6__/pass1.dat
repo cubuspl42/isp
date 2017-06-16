@@ -1,0 +1,105 @@
+      LABEL-
+INSTRUCTION-namereg
+   OPERAND1-s0
+   OPERAND2-mode
+    COMMENT-
+      LABEL-
+INSTRUCTION-namereg
+   OPERAND1-s1
+   OPERAND2-btn_i
+    COMMENT-
+      LABEL-
+INSTRUCTION-namereg
+   OPERAND1-s2
+   OPERAND2-btn_i_next
+    COMMENT-
+      LABEL-
+INSTRUCTION-namereg
+   OPERAND1-s3
+   OPERAND2-btn_i_xor
+    COMMENT-
+      LABEL-
+INSTRUCTION-namereg
+   OPERAND1-s4
+   OPERAND2-index
+    COMMENT-
+      LABEL-
+INSTRUCTION-namereg
+   OPERAND1-s5
+   OPERAND2-counter
+    COMMENT-
+      LABEL-
+INSTRUCTION-namereg
+   OPERAND1-s6
+   OPERAND2-tick
+    COMMENT-
+      LABEL-
+INSTRUCTION-namereg
+   OPERAND1-s7
+   OPERAND2-digit
+    COMMENT-
+      LABEL-
+INSTRUCTION-enable
+   OPERAND1-interrupt
+   OPERAND2-
+    COMMENT-
+      LABEL-
+INSTRUCTION-load
+   OPERAND1-digit
+   OPERAND2-00
+    COMMENT-
+      LABEL-main
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-
+      LABEL-
+INSTRUCTION-load
+   OPERAND1-digit
+   OPERAND2-0a
+    COMMENT-
+      LABEL-
+INSTRUCTION-output
+   OPERAND1-digit
+   OPERAND2-00
+    COMMENT-
+      LABEL-
+INSTRUCTION-jump
+   OPERAND1-main
+   OPERAND2-
+    COMMENT-
+      LABEL-isr
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; add digit, 01
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;load digit, 0a
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;output digit, 00
+      LABEL-
+INSTRUCTION-returni
+   OPERAND1-enable
+   OPERAND2-
+    COMMENT-
+      LABEL-
+INSTRUCTION-address
+   OPERAND1-3ff
+   OPERAND2-
+    COMMENT-
+      LABEL-
+INSTRUCTION-jump
+   OPERAND1-isr
+   OPERAND2-
+    COMMENT-

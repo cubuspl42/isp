@@ -1,0 +1,24 @@
+namereg s0, mode
+namereg s1, btn_i
+namereg s2, btn_i_next
+namereg s3, btn_i_xor
+namereg s4, index
+namereg s5, counter
+namereg s6, tick
+namereg s7, digit
+
+enable interrupt
+
+load digit, 00
+
+main:
+	jump main
+
+isr:
+	; add digit, 01
+	load digit, 0a
+	output digit, 00
+	returni enable
+
+address 3ff
+jump isr

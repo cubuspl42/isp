@@ -1,0 +1,10 @@
+AR display behavioral /home/kuba/lab6__/display.vhd sub00/vhpl03 1497606431
+EN display NULL /home/kuba/lab6__/display.vhd sub00/vhpl02 1497606430
+AR rom low_level_definition /home/kuba/lab6__/rom.vhd sub00/vhpl07 1497606435
+EN rom NULL /home/kuba/lab6__/rom.vhd sub00/vhpl06 1497606434
+EN clk_divider NULL /home/kuba/lab6__/clk_divider.vhd sub00/vhpl00 1497606428
+AR kcpsm3 low_level_definition /home/kuba/lab6__/kcpsm3.vhd sub00/vhpl05 1497606433
+AR clk_divider behavioral /home/kuba/lab6__/clk_divider.vhd sub00/vhpl01 1497606429
+EN top NULL /home/kuba/lab6__/top.vhd sub00/vhpl08 1497606436
+AR top behavioral /home/kuba/lab6__/top.vhd sub00/vhpl09 1497606437
+EN kcpsm3 NULL /home/kuba/lab6__/kcpsm3.vhd sub00/vhpl04 1497606432

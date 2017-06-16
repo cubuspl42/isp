@@ -1,0 +1,6 @@
+set -ex
+xst -intstyle ise -ifn "/home/kuba/code/isp/lab5x/source.xst" -ofn "/home/kuba/code/isp/lab5x/source.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s200-ft256-4 source.ngc source.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o source_map.ncd source.ngd source.pcf 
+par -w -intstyle ise -ol high -t 1 source_map.ncd source.ncd source.pcf 
+bitgen -intstyle ise -f source.ut source.ncd 

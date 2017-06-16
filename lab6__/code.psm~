@@ -1,0 +1,10 @@
+loop: JUMP loop
+
+;interruption handler
+int_handler:
+	RETURNI ENABLED			
+
+
+
+	ADDRESS 3FF
+JUMP int_handler
